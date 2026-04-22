@@ -1,6 +1,6 @@
 {
   "STORAGE_ROOT": "/data",
-  "MAX_FILE_SIZE": 524288000,
+  "MAX_FILE_SIZE": 5368709120,
   "JWT_SECRET": "change-this-secret-before-deploying-use-a-long-random-value",
   "JWT_ALGORITHM": "HS256",
   "JWT_EXPIRE_HOURS": 24,
