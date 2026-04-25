@@ -60,7 +60,7 @@ async def login_page() -> None:
             else:
                 error_lbl.set_text(resp.json().get("detail", "Login failed"))
 
-        ui.button("Sign In", on_click=do_login).classes(_BTN_PRIMARY)
+        ui.button("Sign in", on_click=do_login).classes(_BTN_PRIMARY)
 
         ui.separator().classes("my-4 bg-gray-100")
 

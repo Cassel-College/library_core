@@ -28,12 +28,12 @@ async def render_versions_tab(project_name: str) -> None:
         ui.label("Upload New Version").classes("text-base font-semibold text-gray-700 mb-4")
 
         version_in = (
-            ui.input("Version tag  (e.g. v1.0 or v2.3.1)")
+            ui.input("Version tag (e.g. v1.0 or v2.3.1)")
             .classes("w-full")
             .props("outlined dense")
         )
         about_in = (
-            ui.textarea("Description  (optional)")
+            ui.textarea("Description (optional)")
             .classes("w-full")
             .props("outlined autogrow")
         )
@@ -80,7 +80,7 @@ async def render_versions_tab(project_name: str) -> None:
             upload_msg.classes(remove="text-green-500 text-blue-500", add="text-red-500")
 
         ui.upload(
-            label="Drop .tar.gz file here  (or click to browse)",
+            label="Drop .tar.gz file here (or click to browse)",
             on_upload=on_file_received,
             on_rejected=on_file_rejected,
             auto_upload=True,
